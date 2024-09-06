@@ -1,0 +1,300 @@
+@import url('https://font.sec.miui.com/font/css?family=Source_Han_Serif:400,600:Chinese_Simplify,Chinese_Traditional,Latin,Numeric&display=swap');
+@import url('https://font.sec.miui.com/font/css?family=MiSans:400,700:Chinese_Simplify,Chinese_Traditional,Latin,Numeric&display=swap');
+/* ***************滚动条美化******************** */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+
+/* ****************滚动条Over******************* */
+
+/* *****************段落标题前小风车*********************** */
+#post-content #md_handsome_origin h1:before, #post-content #md_handsome_origin h2:before, #post-content #md_handsome_origin h3:before, #post-content #md_handsome_origin h4:before, #post-content #md_handsome_origin h5:before, #post-content #md_handsome_origin h6:before, #post-content #md_handsome_origin hr:before, #post .post-copyright:before, #post .post-outdate-notice:before, .note:not(.no-icon)::before {
+    display: inline-block;
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#post-content #md_handsome_origin h1, #post-content #md_handsome_origin h2, #post-content #md_handsome_origin h3, #post-content #md_handsome_origin h4, #post-content #md_handsome_origin h5, #post-content #md_handsome_origin h6 {
+    position: relative;
+    padding-left: 26px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#post-content #md_handsome_origin h1:hover, #post-content #md_handsome_origin h2:hover, #post-content #md_handsome_origin h3:hover, #post-content #md_handsome_origin h4:hover, #post-content #md_handsome_origin h5:hover, #post-content #md_handsome_origin h6:hover {
+    padding-left: 30px;
+}
+
+#post-content #md_handsome_origin h1::before,
+#post-content #md_handsome_origin h2::before,
+#post-content #md_handsome_origin h3::before,
+#post-content #md_handsome_origin h4::before,
+#post-content #md_handsome_origin h5::before,
+#post-content #md_handsome_origin h6::before {
+    position: absolute;
+    top: calc(50% - 7px);
+    color: #f47466;
+    content: '\f863';
+    left: 0;
+    line-height: 1;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-animation: ccc 1.6s linear infinite;
+    animation: ccc 1.8s linear infinite;
+    font-size: 16px;
+    margin-top: 0 !important;
+}
+
+#post-content #md_handsome_origin h1:hover:before, 
+#post-content #md_handsome_origin h2:hover:before,
+#post-content #md_handsome_origin h3:hover:before, 
+#post-content #md_handsome_origin h4:hover:before, 
+#post-content #md_handsome_origin h5:hover:before, 
+#post-content #md_handsome_origin h6:hover:before {
+    color: #49b1f5;
+}
+
+@-webkit-keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+
+@keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+
+#post-content #md_handsome_origin li::marker {
+    color: #49b1f5;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+#post-content #md_handsome_origin li:hover::marker {
+    color: #ff7242;
+}
+
+/* *****************段落标题前小风车Over*********************** */
+
+/* *******************标题居中********************** */
+
+
+.bg-light .lter, .bg-light.lter {
+    text-align: center !important;
+    font-family: 楷体 !important;
+}
+
+/* *******************首页标题居中Over********************** */
+
+/***********盒子四周、上导航栏、文章中的小框、文章图片及博客信息阴影调整**************/
+.app.container {
+    box-shadow: 0 0 30px rgba(73, 90, 47, 0.47);
+}
+
+.navbar {
+    box-shadow: 0 1px 10px rgba(73, 90, 47, 0.47);
+}
+
+.breadcrumb {
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(73, 90, 47, 0.47);
+}
+
+.breadcrumb:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 8px rgba(73, 90, 47, 0.47);
+}
+
+.wrapper-lg img {
+    transition: all 0.3s;
+    box-shadow: 0 3px 5px rgba(73, 90, 47, 0.47);
+}
+
+.wrapper-lg img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 10px rgba(73, 90, 47, 0.47);
+}
+
+.preview {
+    box-shadow: 0 2px 4px rgba(73, 90, 47, 0.47);
+}
+
+#blog_info .list-group {
+    transition: all 0.3s;
+}
+
+#blog_info .list-group:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(73, 90, 47, 0.47);
+}
+
+/***********盒子四周、上导航栏、文章中的小框、文章图片及博客信息阴影调整Over**************/
+
+/***************************文章阴影及头图放大特效，修正放大后头图的版权位置 *************************/
+.blog-post .panel {
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(73, 90, 47, 0.47);
+}
+
+.blog-post .panel:hover {
+    box-shadow: 0 4px 10px rgba(73, 90, 47, 0.47);
+}
+
+.blog-post .panel-small {
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(73, 90, 47, 0.47);
+}
+
+.blog-post .panel-small:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(73, 90, 47, 0.47);
+}
+
+.blog-post .panel-picture {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(73, 90, 47, 0.47);
+}
+
+.blog-post .panel-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(73, 90, 47, 0.47);
+}
+
+.index-post-img {
+    overflow: hidden;
+}
+
+.index-post-img-small {
+    overflow: hidden;
+}
+
+.item-thumb {
+    transition: all 0.3s;
+}
+
+.item-thumb:hover {
+    transform: scale(1.1)
+}
+
+.item-thumb-small {
+    transition: all 0.3s;
+}
+
+.item-thumb-small:hover {
+    transform: scale(1.05)
+}
+
+.item-thumb .img_copyright {
+    transition: all 0.3s;
+}
+
+.item-thumb:hover .img_copyright {
+    transform: scale(1.05);
+}
+
+.entry-thumbnail {
+    overflow: hidden;
+}
+
+.post-content img {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.post-content img:hover {
+    transform: scale(1.05);
+}
+
+/***************************文章阴影及头图放大特效，修正放大后头图的版权位置 Over *************************/
+
+/************************ 头部滚动进度条 ********************************/
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #49b1f5;
+    border-radius: 2em;
+    z-index: 9999;
+    transition: width 0.2s ease-out;
+}
+/************************ 头部滚动进度条Over ********************************/
+
+.btn-pay {
+    animation: star 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes star {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+/************************* 自定义字体 ****************************/
+/****
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./static/PingFangSC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+**/
+
+body, html{
+    font-family: "PingFang SC",MiSans,"Source Sans Pro","Hiragino Sans GB","Microsoft Yahei",SimSun,Helvetica,Arial,Sans-serif,monospace !important;
+    color: #2c2e3b !important;
+    font-size: 15px !important;
+}
+
+#post-content h1, #post-content h2, #post-content h3, #post-content h4, #post-content h5, #post-content h6{
+    color: #2c2e3b !important;
+}
